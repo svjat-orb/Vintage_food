@@ -3,56 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Vintage Food</title>
 </head>
 <body>
     <header class="header">
         <nav class="top-nav">
             <a class="logo" href="#">
-                <img src="images/logo.png">
+                <img src="images/logo.png" class="img-logo">
             </a>
             <ul class="top-menu">
-                <li class="first-top-menu"><a href="#">Главная</a></li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><button class="basket"><img src="images/basket.png"></button></li>
+                <li class="item-top-menu"><a href="#">Главная</a></li>
+                <li class="item-top-menu"><a href="#">Акции</a></li>
+                <li class="item-top-menu"><a href="#">О нас</a></li>
             </ul>
+            <button class="basket" type="button"><img src="images/basket.png"></button>
         </nav>
-        <ul class="intro">
-            <li class="intro-important">Быстрая доставка для Вас</li>
-            <li>Сделай первый заказ и получи скидку 50%</li>
-            <li><button class="order">Заказать</button></li>
-        </ul>
-        <div class="big-burger"><img src="images/burger.jpeg" width="640" height="600"></div>
+        <div class="header-container">
+            <ul class="intro-list">
+                <li>
+                    <p class="intro-important">Быстрая доставка для Вас</p>
+                </li>
+                <li>
+                    <p class="intro-discount">Сделай первый заказ и получи скидку 50%</p>
+                </li>
+                <li><button class="order" type="button"><a href="#">Заказать</a></button></li>
+            </ul>
+            <div class="big-burger"><img src="images/burger.png" width="640" height="600"></div>
+        </div>    
     </header>
 
-    <main>
-        <section class="main-content">
-            <h1>Меню</h1>
+    <main class="main-content">
+        <section class="main-catalog">
+            <h1 class="main-catalog-title">Меню</h1>
             <ul class="list-content-menu">
-                <li>
+                <li class="catalog-item">
                     <img src="images/burgers.png">
-                    <p>Бургеры</p>
+                    <p class="catalog-text">Бургеры</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="images/chicken.png">
-                    <p>Блюда из курицы</p>
+                    <p class="catalog-text">Блюда из курицы</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="images/hots.png">
-                    <p>Горячие блюда</p>
+                    <p class="catalog-text">Горячие блюда</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="images/snacks.png">
-                    <p>Закуски</p>
+                    <p class="catalog-text">Закуски</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="images/salads.png">
-                    <p>Салаты</p>
+                    <p class="catalog-text">Салаты</p>
                 </li>
-                <li>
+                <li class="catalog-item">
                     <img src="images/deserts.png">
-                    <p>Десерты</p>
+                    <p class="catalog-text">Десерты</p>
                 </li>
             </ul>
         </section>
@@ -66,12 +73,14 @@
             <li><a href="#">Договор оферты</a></li>
         </ul>
         <ul class="footer-description">
-            <li>ООО "Vintage Foods"</li>
-            <li>© Все права защищены</li>
+            <li>
+                <p class="footer-description-text">ООО "Vintage Foods"</p></li>
+            <li>
+                <p class="footer-description-text"></p>© Все права защищены</p></li>
         </ul>
         <ul class="footer-social-media">
-            <li><img src="images/vk.png" width="50" height="50"</li>
-            <li><img src="images/tg.png" width="60" height="60"</li>
+            <li class="vk"><img src="images/vk.png" width="50" height="50" class="fsm-img"></li>
+            <li><img src="images/tg.png" width="60" height="60" class="fsm-img"></li>
         </ul>
     </footer>
 </body>
